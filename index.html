@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0b">
+  <meta name="description" content="Ewen Le Callet's portfolio: engineering, efficient AI, graphic design, and photography.">
+  <title>EWEN.EXE | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="gate-active">
+  <div class="site-shell" id="siteShell" inert>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">EWEN<span class="brand-star">✳</span><small>.EXE</small></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#technical">TECH <span>04</span></a>
+        <a href="#projects">VISUAL <span>04</span></a>
+        <a href="#archive">ARCHIVE <span>18</span></a>
+        <a href="#about">ABOUT</a>
+      </nav>
+      <a class="header-cv" href="CV_English_EfficientAICanva.pdf" target="_blank" rel="noopener">OPEN CV <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="top">
+      <div class="ticker" aria-hidden="true"><div class="ticker-track">IMAGE MAKING ✳ GRAPHIC DESIGN ✳ PHOTOGRAPHY ✳ DIGITAL EXPERIMENTS ✳ IMAGE MAKING ✳ GRAPHIC DESIGN ✳ PHOTOGRAPHY ✳ DIGITAL EXPERIMENTS ✳</div></div>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-top"><span>PORTFOLIO / 2024—2026</span><span class="live"><i></i> ARCHIVE ONLINE</span></div>
+        <div class="hero-title"><p>A VISUAL ARCHIVE BY</p><h1 id="heroTitle">EWEN<span>✳</span></h1><div class="hero-aside">ENGINEERING<br>GRAPHIC DESIGN<br>PHOTOGRAPHY</div></div>
+        <div class="hero-image"><img src="portfolio/portfolio_1.png" alt="Triptych of graphic design and photography created for Polytech Nantes sports teams"><span class="image-code">FIG. 001 / SPORTS SEASON</span></div>
+        <div class="hero-bottom"><span>MADE TO BE EXPLORED</span><a href="#projects">EXPLORE PROJECTS <span aria-hidden="true">↓</span></a><span>SCROLL / CLICK / EXPLORE</span></div>
+      </section>
+      <section class="technical section-band" id="technical" aria-labelledby="technicalTitle">
+        <div class="section-heading"><span>01 / ENGINEERING</span><h2 id="technicalTitle">TECHNICAL SIGNAL<span class="acid">*</span></h2><span>04 ANIMATION SUMMARY</span></div>
+        <div class="technical-grid">
+          <article class="technical-project"><div class="tech-meta"><span>01 / RESEARCH</span><span>SJTU · 2026</span></div><div class="tech-visual saliency-visual" aria-hidden="true"><div class="saliency-frame"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><b>ATTENTION MAP</b></div><h3>Saliency Bias</h3><p>A study of saliency bias in quality assessment metrics for edited images, compared with human visual attention.</p><small>IEEE VCIP 2026 PAPER · FIRST AUTHOR</small></article>
+          <article class="technical-project"><div class="tech-meta"><span>02 / MULTIMODAL AI</span><span>LS2N · 2025</span></div><div class="tech-visual token-visual" aria-hidden="true"><div class="token-frames"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span></div><b>FRAMES → TOKENS</b></div><h3>Video Token Reduction</h3><p>Temporal and semantic video-frame selection to reduce token costs for multimodal models; exploration of LoRA.</p><small>CLIP · K-MEANS · LORA</small></article>
+          <article class="technical-project"><div class="tech-meta"><span>03 / EVENT-BASED VISION</span><span>LS2N · 2026—27</span></div><div class="tech-visual event-visual" aria-hidden="true"><div class="event-points"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="event-box"></div><b>EVENT STREAM / DETECTION</b></div><h3>Event-Based Vision</h3><p>Detecting and decoding barcodes directly from event-camera streams for resource-constrained drones.</p><small>EMBEDDED COMPUTER VISION</small></article>
+          <article class="technical-project"><div class="tech-meta"><span>04 / EDGE AI</span><span>Polytech Nantes · 2025—26</span></div><div class="tech-visual wildlife-visual" aria-hidden="true"><div class="wildlife-scan"></div><div class="wildlife-target">✳</div><b>SPECIES CLASSIFICATION</b></div><h3>Wildlife Monitoring</h3><p>An autonomous wildlife-monitoring prototype combining AI-based species classification, multimodal sensors, and automated reports.</p><small>EDGE AI · EMBEDDED SYSTEMS</small></article>
+        </div>
+      </section>
+      <section class="directory section-band" id="projects" aria-labelledby="projectsTitle">
+        <div class="section-heading"><span>02 / VISUAL DIRECTORY</span><h2 id="projectsTitle">SELECT PROJECT<span class="acid">*</span></h2><span>04 PROJECTS AVAILABLE</span></div>
+        <div class="project-index" id="projectIndex"></div>
+      </section>
+      <section class="project project-sport" id="sport" aria-labelledby="sportTitle">
+        <div class="project-head"><div><span class="project-kicker">PROJECT 01 / SPORTS GRAPHICS</span><h2 id="sportTitle">MATCH<br><span>DAY!</span></h2></div><p>Visual identity, posters, and season imagery for Polytech Nantes sports teams.</p><button class="motion-switch" type="button" data-motion="sport" aria-pressed="true" title="Toggle project animation">MOTION <span>ON</span></button></div>
+        <div class="sport-marquee" aria-hidden="true"><div>POLYTECH NANTES ✳ SPORTS ✳ ASSOCIATION ✳ POLYTECH NANTES ✳ SPORTS ✳ ASSOCIATION ✳</div></div>
+        <div class="gallery gallery-sport" data-gallery="sport"></div>
+      </section>
+      <section class="project project-photo" id="photo" aria-labelledby="photoTitle">
+        <div class="project-head"><div><span class="project-kicker">PROJECT 02 / PHOTOGRAPHY</span><h2 id="photoTitle">BETWEEN<br><span>THE WINDOWS</span></h2></div><p>Portraits and photographic fragments exploring reflections, distance, and light.</p><button class="motion-switch" type="button" data-motion="photo" aria-pressed="true" title="Toggle project animation">MOTION <span>ON</span></button></div>
+        <div class="gallery gallery-photo" data-gallery="photo"></div>
+      </section>
+      <section class="project project-experiment" id="experiment" aria-labelledby="experimentTitle">
+        <div class="project-head"><div><span class="project-kicker">PROJECT 03 / EXPERIMENTAL</span><h2 id="experimentTitle">NO<br><span>SIGNAL_</span></h2></div><p>High-contrast images, patterns, and digital textures. A series of visual experiments.</p><button class="motion-switch" type="button" data-motion="experiment" aria-pressed="true" title="Toggle project animation">MOTION <span>ON</span></button></div>
+        <div class="gallery gallery-experiment" data-gallery="experiment"></div>
+      </section>
+      <section class="project project-unicef" id="unicef" aria-labelledby="unicefTitle">
+        <div class="project-head"><div><span class="project-kicker">PROJECT 04 / POSTER</span><h2 id="unicefTitle">MIND<br><span>MATTERS</span></h2></div><p>A mental health awareness poster for UNICEF.</p><button class="motion-switch" type="button" data-motion="unicef" aria-pressed="true" title="Toggle project animation">MOTION <span>ON</span></button></div>
+        <div class="gallery gallery-unicef" data-gallery="unicef"></div>
+      </section>
+      <section class="archive-section section-band" id="archive" aria-labelledby="archiveTitle">
+        <div class="section-heading"><span>02 / ALL IMAGES</span><h2 id="archiveTitle">IMAGE INDEX<span class="acid">*</span></h2><span>18 ENTRIES</span></div>
+        <div class="archive-controls" role="group" aria-label="Filter images">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">ALL <span>18</span></button>
+          <button class="filter-button" type="button" data-filter="sport" aria-pressed="false">SPORT <span>09</span></button>
+          <button class="filter-button" type="button" data-filter="photo" aria-pressed="false">PHOTO <span>04</span></button>
+          <button class="filter-button" type="button" data-filter="experiment" aria-pressed="false">EXPERIMENTAL <span>04</span></button>
+          <button class="filter-button" type="button" data-filter="unicef" aria-pressed="false">POSTER <span>01</span></button>
+        </div>
+        <div class="archive-grid" id="archiveGrid"></div>
+      </section>
+      <section class="about section-band" id="about" aria-labelledby="aboutTitle"><div><span>03 / ABOUT</span><h2 id="aboutTitle">IMAGES<br>IN <i>MOTION.</i></h2></div><div class="about-copy"><p>I’m Ewen Le Callet, a final-year engineering student at Polytech Nantes. I work on efficient AI and multimedia systems, and I also create images through graphic design, photography, and visual experimentation.</p><div class="about-links"><a href="CV_English_EfficientAICanva.pdf" target="_blank" rel="noopener">VIEW MY CV <span aria-hidden="true">↗</span></a><a href="mailto:ewen.lecallet@gmail.com"> e-mail : ewen.lecallet@gmail.com<span aria-hidden="true"><a href="tel:+33695159330">WECHAT / PHONE: +33 6 95 15 93 30 <span aria-hidden="true">↗</span></a></span></a>
+      </div></div></section>
+    </main>
+    <footer class="site-footer"><span>© EWEN / 2026</span><a href="#top">BACK TO TOP ↑</a><span>END OF TRANSMISSION_</span></footer>
+  </div>
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-chrome"><span>EWEN.EXE / ACCESS PORTAL</span><span>CONNECTING <i>icon</i></span></div>
+    <div class="gate-content"><div class="gate-intro"><span class="gate-tag">// HUMAN VERIFICATION SYSTEM</span><h2 id="gateTitle">ARE YOU<br><em>REAL?</em></h2><p>One last click before entering the archive.</p><div class="gate-stamp">NO ROBOTS<br>JUST YOU AND LINUX</div></div>
+      <div class="captcha-window"><div class="window-bar"><span>VERIFY.EXE</span><span>□ ×</span></div><div class="captcha-prompt"><span>01 / 01</span><strong>Select all images with Linux inside</strong></div><div class="captcha-grid" id="captchaGrid"></div><div class="captcha-actions"><span id="captchaStatus" role="status">0 IMAGES SELECTED</span><button type="button" id="verifyButton">VERIFY ↗</button></div></div>
+    </div>
+    <div class="gate-footer"><button type="button" id="skipGate">SKIP INTRO ↗</button><span>THIS IS NOT A REAL CAPTCHA</span></div>
+  </div>
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Image viewer" hidden><div class="viewer-bar"><span id="viewerCounter">01 / 18</span><span id="viewerGroup">VISUAL ARCHIVE</span><button type="button" id="viewerClose" aria-label="Close image">CLOSE ×</button></div><div class="viewer-stage"><button type="button" id="viewerPrev" aria-label="Previous image">←</button><img id="viewerImage" alt=""><button type="button" id="viewerNext" aria-label="Next image">→</button></div><div class="viewer-foot"><strong id="viewerTitle"></strong><span id="viewerCaption"></span></div></div>
+  <noscript><style>.gate{display:none}.site-shell{display:block}</style><p>This portfolio requires JavaScript to display the galleries. <a href="CV_English_EfficientAICanva.pdf">View CV</a>.</p></noscript>
+</body>
+</html>
